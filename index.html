@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.PNG">
+  <title>Tip calculator app</title>
+</head>
+<body>
+  <div class="card">
+    <img src="./images/logo.svg" alt="" class="logo">
+    <div class="container">
+      <div class="left">
+         <div>
+          <h5>Bill</h5>
+          <div class="image__input error_one">
+            <img src="./images/icon-dollar.svg" alt="">
+            <input type="text" name="" id="bill" class="input" placeholder="0">
+          </div>
+         </div>
+         <div>
+          <h5>Select Tip %</h5>
+         <div class="grid-tip">
+          <button class="percentage percentage-btn" data-value="5">5%</button>
+          <button class="percentage percentage-btn" data-value="10">10%</button>
+          <button class="percentage percentage-btn" data-value="15">15%</button>
+          <button class="percentage percentage-btn" data-value="25">25%</button>
+          <button class="percentage percentage-btn" data-value="50">50%</button>
+          <input type="text" class="percentage custom" placeholder="Custom" id="custom">
+         </div>
+         </div>
+         <div>
+          <h5>Number of people</h5>
+          <div class="image__input error">
+            <img src="./images/icon-person.svg" alt="">
+            <input type="text" name="" id="num" class="input" placeholder="0">
+          </div>
+         </div>
+      </div>
+      <div class="right">
+         <div class="tip_amount">
+          <div class="desc">
+            <h5>Tip Amount</h5>
+            <p>/ person</p>
+          </div>
+          <div class="amount">
+            <h2>Rs:<span id="tip">0.00</span></h2>
+          </div>
+         </div>
+         <div class="tip_amount">
+          <div class="desc"><h5>Total</h5>
+            <p>/ person</p></div>
+          <div class="amount">
+            <h2>Rs:<span id="split">0.00</span></h2>
+          </div>
+         </div>
+         <div class="button">
+          <button class="reset" id="reset">calculate</button>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Developed by <span><a href="https://rakesh-portfolio-alpha.vercel.app/">Rakesh Vanam</a></span> </p>
+    <img src="./images/logo.PNG" alt="">
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
